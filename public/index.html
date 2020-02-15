@@ -14,7 +14,7 @@
         var socket = io.connect();
         socket.on('jumlahKonekServer', function(data){
             console.log(data)
-            $('#jumlahUser').html("jumlah Konek Server " + data.jumlahKonekServer + " online")
+            $('#jumlahUser').html("jumlah Konek Server " + data.jumlahKonekServer + " online" + " User Online "+ data.userOnline)
         })
     </script>
 
